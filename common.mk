@@ -403,18 +403,15 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
     android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.1 \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0 \
     android.hardware.secure_element@1.2.vendor \
     libprotobuf-cpp-full \
     libril_shim \
     libshim_imsvidecoder \
     librmnetctl \
-    libxml2 
+    libxml2
 
 # SoC
 PROCESSOR_MODEL := SM8150
