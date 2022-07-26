@@ -55,11 +55,7 @@ public class DeviceSettings extends PreferenceFragment
 
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
 
-    private static final boolean sHasPopupCamera =
-        Build.DEVICE.equals("OnePlus7Pro") ||
-        Build.DEVICE.equals("OnePlus7TPro") ||
-        Build.DEVICE.equals("guacamole") ||
-        Build.DEVICE.equals("hotdog");
+    private static final String POPUP_HELPER_PKG_NAME = "org.lineageos.camerahelper";
 
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mHBMAutobrightnessSwitch;
@@ -100,7 +96,8 @@ public class DeviceSettings extends PreferenceFragment
         mHBMAutobrightnessSwitch.setOnPreferenceChangeListener(this);
 
         mCameraCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_CAMERA);
-        if (sHasPopupCamera) {
+        boolean hasPopup = Utils.isPackageInstalled(POPUP_HELPER_PKG_NAME, getContext());
+        if (hasPopup) {
             mAlwaysCameraSwitch = (TwoStatePreference) findPreference(KEY_ALWAYS_CAMERA_DIALOG);
             boolean enabled = Settings.System.getInt(getContext().getContentResolver(),
                         KEY_SETTINGS_PREFIX + KEY_ALWAYS_CAMERA_DIALOG, 0) == 1;

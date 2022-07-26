@@ -19,6 +19,9 @@ package org.lineageos.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.PackageManager.PackageInfoFlags;
 import android.os.RemoteException;
 import android.os.UserHandle;
 
@@ -126,5 +129,14 @@ public class Utils {
             return fileValue;
         }
         return defValue;
+    }
+
+    public static boolean isPackageInstalled(final String name, Context context) {
+        try {
+            context.getPackageManager().getPackageInfo(name, 0);
+            return true;
+        } catch (NameNotFoundException e) {
+            return false;
+        }
     }
 }
