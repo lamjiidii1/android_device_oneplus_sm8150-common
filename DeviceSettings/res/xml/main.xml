@@ -67,6 +67,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="audio"
+        android:title="@string/audio_title">
+        <Preference
+            android:key="audio_dolby_atmos"
+            android:icon="@drawable/ic_dolby"
+            android:title="@string/dolby_title"
+            android:summary="@string/dolby_summary" >
+            <intent
+                android:targetPackage="com.dolby.daxappui"
+                android:targetClass="com.dolby.daxappui.MainActivity" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibrator"
         android:title="@string/category_vibrator">
         <org.lineageos.device.DeviceSettings.VibratorStrengthPreference

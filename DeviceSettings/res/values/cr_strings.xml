@@ -53,6 +53,11 @@
     <string name="notification_slider_mode_none">Normal</string>
     <string name="buttons_dashboard_summary">Alert Slider Settings</string>
 
+    <!-- Audio - Dolby -->
+    <string name="audio_title">Audio</string>
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_summary">Enhance your audio experience with dolby</string>
+
     <!-- Vibration control -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">System Strength</string>
