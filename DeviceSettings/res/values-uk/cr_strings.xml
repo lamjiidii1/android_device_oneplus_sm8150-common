@@ -24,7 +24,7 @@
     <string name="hbm_autobrightness_summary"></string>
     <string name="hbm_autobrightness_title">Авто режим високого рівня</string>
     <string name="hbm_autobrightness_threshold_summary"></string>
-    <string name="hbm_autobrightness_threshold_title">Поріг включення високої яскравості (люкс)</string>
+    <string name="hbm_autobrightness_threshold_title">Поріг ввімкнення високої яскравості (люкс)</string>
     <string name="dc_mode_summary"></string>
     <string name="dc_mode_title">DC-затемнення</string>
     <string name="dci_mode_summary"></string>
@@ -56,7 +56,7 @@
     <!-- Vibration control -->
     <string name="category_vibrator">Вібрація</string>
     <string name="vib_strength_title_head">Загальносистемна</string>
-    <string name="vib_strength_summary_head">Встановлення частки загальної свідомості</string>
+    <string name="vib_strength_summary_head">Встановлення інтенсивності загальної вібрації</string>
     <string name="vib_call_strength_title_head">Виклики</string>
     <string name="vib_call_strength_summary_head">Встановлення інтенсивності вібрації дзвінка</string>
     <string name="vib_notif_strength_title_head">Сповіщення</string>
